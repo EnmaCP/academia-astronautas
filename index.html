@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Academia de Astronautas 🚀</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Estrellas de fondo -->
+  <div class="stars" id="stars"></div>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="hero__content">
+      <p class="hero__eyebrow">🛰️ Programa de Selección 2026</p>
+      <h1 class="hero__title">Academia de<br /><span>Astronautas</span></h1>
+      <p class="hero__subtitle">
+        El universo te espera. Únete a la élite que llevará a la humanidad
+        más allá de los límites del cielo.
+      </p>
+      <a href="#registro" class="btn btn--primary">Solicitar Admisión</a>
+    </div>
+    <div class="hero__rocket" aria-hidden="true">🚀</div>
+  </header>
+
+  <!-- STATS -->
+  <section class="stats">
+    <div class="stats__grid">
+      <div class="stat">
+        <span class="stat__number">142</span>
+        <span class="stat__label">Astronautas formados</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">37</span>
+        <span class="stat__label">Misiones completadas</span>
+      </div>
+      <div class="stat">
+        <span class="stat__number">12</span>
+        <span class="stat__label">Destinos explorados</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROGRAMA -->
+  <section class="program">
+    <h2 class="section-title">¿Qué aprenderás?</h2>
+    <div class="program__grid">
+      <div class="card">
+        <div class="card__icon">🌍</div>
+        <h3>Navegación Espacial</h3>
+        <p>Domina los fundamentos de la mecánica orbital y la navegación autónoma entre planetas.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">🔬</div>
+        <h3>Ciencia en Microgravedad</h3>
+        <p>Aprende a realizar experimentos científicos en entornos de gravedad cero.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">🛡️</div>
+        <h3>Supervivencia EVA</h3>
+        <p>Entrenamiento en actividad extravehicular y gestión de emergencias en el espacio.</p>
+      </div>
+      <div class="card">
+        <div class="card__icon">🤖</div>
+        <h3>Sistemas de la Nave</h3>
+        <p>Conoce y opera los sistemas críticos de propulsión, soporte vital y comunicaciones.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FORMULARIO DE REGISTRO -->
+  <section class="register" id="registro">
+    <div class="register__container">
+      <h2 class="section-title">Solicita tu plaza</h2>
+      <p class="register__subtitle">
+        Completa el formulario y nos pondremos en contacto contigo para iniciar el proceso de selección.
+      </p>
+
+      <form class="form" id="registrationForm" novalidate>
+        <div class="form__group">
+          <label for="name" class="form__label">Nombre completo</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            class="form__input"
+            placeholder="Ej. Elena Fernández"
+            required
+          />
+        </div>
+
+        <div class="form__group">
+          <label for="email" class="form__label">Correo electrónico</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            class="form__input"
+            placeholder="Ej. elena@correo.com"
+            required
+          />
+        </div>
+
+        <button type="submit" class="btn btn--submit" id="submitBtn">
+          <span class="btn__text">🚀 Enviar solicitud</span>
+          <span class="btn__loading" hidden>⏳ Enviando…</span>
+        </button>
+      </form>
+
+      <!-- Mensajes de estado -->
+      <div class="alert alert--success" id="alertSuccess" hidden>
+        ✅ ¡Solicitud recibida, astronauta! Revisa tu correo para los próximos pasos.
+      </div>
+      <div class="alert alert--error" id="alertError" hidden>
+        ❌ Algo salió mal. Por favor, inténtalo de nuevo.
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 Academia de Astronautas · Misión Serverless AWS</p>
+    <p class="footer__sub">Construido con ❤️ y Node.js en las estrellas</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
